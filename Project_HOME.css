@@ -1,0 +1,172 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('forest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Styling for the header */
+header {
+    background-color: #2f4f4f; /* Dark forest green */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #556b2f; /* Olive green */
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #6b8e23; /* Darker olive green */
+}
+
+/* Section content */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #2e8b57; /* Sea green */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #8fbc8f;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #8fbc8f; /* Light green */
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #e0f2f1;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2f4f4f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    position: relative; /* Make sure it's positioned relative to the normal flow */
+    z-index: 1; /* Ensures it stays above any background overlays */
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+/* Specific section highlights */
+section ul {
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #556b2f;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* A dark overlay */
+    z-index: -1; /* Send it behind the content */
+}
